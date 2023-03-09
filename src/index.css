@@ -1,0 +1,24 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.root{
+  width: 100%;
+}
+body{
+  margin: .5rem 2rem;
+  background: rgb(8, 8, 8);
+}
+.Notification{
+  position: absolute;
+  transition: 400ms ease-in-out;
+  top: 100px;
+  right: 10%;
+  background-color: rgb(252, 252, 252);
+  font-size: 16px;
+  max-width: fit-content;
+  padding: 0px 1rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.384) 0px 2px 4px;
+}

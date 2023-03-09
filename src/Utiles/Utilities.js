@@ -2,7 +2,6 @@
 export {default as Navbar} from "../Components/Navbar/Navbar"
 export {default as ShopCard} from "../Components/ShopCard/ShopCard"
 export {default as ContactForm} from "../Components/ContactForm/ContactForm"
-export {default as AuthForm} from "../Components/AuthForm/AuthForm"
 export {default as ValueSection} from "../Components/valueSection/ValueSection"
 
 /*Pages*/

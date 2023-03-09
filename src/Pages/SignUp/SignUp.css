@@ -1,0 +1,71 @@
+.SignUp{
+    height: 500px;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.248);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.SignUp legend {
+    font-size: 24px;
+    color: white;
+
+}
+button{
+    padding: 6px 12px;
+    background-color: #fff;
+    border: none;
+}
+.SignUp p:last-of-type{
+    color: aliceblue;
+}
+.SignUp .inputs{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.SignUp .inputs input{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.SignUp .inputs label{
+    margin-bottom: 1rem;
+    color: aliceblue;
+    font-size: 18px;
+}
+span{
+    margin-left: 1rem;
+}
+.SignUp p span *{
+    color: rgba(201, 93, 26, 0.894);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.SignUp p span *:hover{
+
+    color: rgb(238, 238, 238);
+}
+.SignUp button{
+    max-width: 150px;
+    padding: 10px 40px;
+    border-radius: 25px;
+    border: none;
+    font-size:larger;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+.SignUp button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;    
+}
