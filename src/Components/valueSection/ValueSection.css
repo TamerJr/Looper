@@ -1,24 +1,38 @@
 .ValueSection{
 
     width: 100%;
-    background-color: #fff;
     text-align: center;
-    position: relative;
+    height: fit-content;
+    color: white;
 }
 .ClientContainer{
     width: 100%;
-    height: 100px;
+
 }
 .Clients{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #a4a4a4af;
+    background-color: #ffffff48;
+    border-radius: 5px;
     list-style: none;
     padding: 0;
     width: 100%;
 
 }
+.Disc-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Disc-info img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.TextDisc{
+    max-width: 50%;
+}
 .Clients li img {
-    max-height: 100%;
+    height: 50px;
+    object-fit: contain;
 }

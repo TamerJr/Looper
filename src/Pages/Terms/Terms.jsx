@@ -5,7 +5,6 @@ const Terms = () => {
   return (
     <section className='Terms'>
       <TersmsIntro/>
-      <ValueSection/>
       <Reservation/>
       <CookiesTerms/>
       <TermsLicense/>

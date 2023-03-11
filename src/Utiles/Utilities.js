@@ -1,5 +1,6 @@
 /*Components*/
 export {default as Navbar} from "../Components/Navbar/Navbar"
+export {default as Clients} from "../Components/Clients/Clients"
 export {default as ShopCard} from "../Components/ShopCard/ShopCard"
 export {default as Disclaimer} from "../Components/Disclaimer/Disclaimer"
 export {default as CookiesTerms} from "../Components/Cookies/CookiesTerms"
@@ -8,7 +9,6 @@ export {default as ContactForm} from "../Components/ContactForm/ContactForm"
 export {default as TermsLicense} from "../Components/TermsLicense/TermsLicense"
 export {default as ValueSection} from "../Components/valueSection/ValueSection"
 export {default as Reservation} from "../Components/ReservationOfRights/Reservation"
-
 /*Pages*/
 //User Page
 export {default as Account} from "../Pages/Account/Account"
