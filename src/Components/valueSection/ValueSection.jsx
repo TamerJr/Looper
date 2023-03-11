@@ -1,8 +1,11 @@
 import React from 'react'
 
 const ValueSection = () => {
+  
   return (
-    <div>ValueSection</div>
+    <section className='ValueSection'>
+
+    </section>
   )
 }
 

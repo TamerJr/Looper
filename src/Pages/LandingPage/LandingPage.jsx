@@ -1,8 +1,11 @@
 import React from 'react'
-
+import ShopCard from '../../Components/ShopCard/ShopCard'
+import { Data } from '../../Utiles/Products'
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <section>
+      
+      <ShopCard Data={Data.slice(0,3)}/></section>
   )
 }
 
