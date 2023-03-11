@@ -1,0 +1,35 @@
+.Contact-Us{
+    width :100%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Client-Support-Container{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+   
+}
+.Client-Support-Container div{
+    width: 300px;
+    overflow: hidden;
+}
+.Client-Support-Container img{
+    height: 300px;
+    border-radius: 10px;
+    max-width: 100%;
+    object-fit:fill;
+}
+.Client-Support-Container button{
+    cursor: pointer;
+    margin-top: 1rem;
+    color: rgb(252, 252, 252);
+    width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.313);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: inherit;
+
+}
