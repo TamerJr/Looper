@@ -18,5 +18,5 @@ export {default as LogIn} from "../Pages/LogIn/LogIn"
 export {default as SignUp} from "../Pages/SignUp/SignUp"
 export {default as ShopPage} from "../Pages/Shop/ShopPage"
 export {default as Conatct} from "../Pages/Contact/Contact"
+export {default as EleDetails} from "../Pages/EleDetails/EleDetails"
 export {default as LandingPage} from "../Pages/LandingPage/LandingPage"
-

@@ -1,12 +1,14 @@
 import React from 'react'
-import ValueSection from '../../Components/valueSection/ValueSection'
 
+
+import ShopCard from '../../Components/ShopCard/ShopCard'
+import { Data } from '../../Utiles/Products'
 const LandingPage = () => {
   return (
-    <div>
+    <section>
       <ValueSection/>
-      
-    </div>
+      <ShopCard Data={Data.slice(0,3)}/></section>
+
   )
 }
 

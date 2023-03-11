@@ -1,0 +1,26 @@
+.EleDetails{
+    display: flex;
+    color: aliceblue;
+    width: 100%;
+}
+.DiscriptionBox{
+    text-transform: capitalize;
+    width :fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+h1{
+    font-size: 24px;
+}
+figure.EleFigure{
+    width: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.EleFigure img.ELeImg{
+    max-width: 100% ;
+}
