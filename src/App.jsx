@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import {Account, Conatct, LandingPage, LogIn, Navbar, ShopPage, SignUp, Terms} from "./Utiles/Utilities"
+import {Account, Conatct, ContactForm, LandingPage, LogIn, Navbar, ShopPage, SignUp, Terms} from "./Utiles/Utilities"
 import './App.css'
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
           <Route path="terms" element={<Terms/>}/>   
           <Route path="shop" element={<ShopPage/>}/>
       </Routes>
+      <ContactForm/>
     </div>
   )
 }

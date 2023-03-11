@@ -8,6 +8,7 @@ export {default as ContactForm} from "../Components/ContactForm/ContactForm"
 export {default as TermsLicense} from "../Components/TermsLicense/TermsLicense"
 export {default as ValueSection} from "../Components/valueSection/ValueSection"
 export {default as Reservation} from "../Components/ReservationOfRights/Reservation"
+
 /*Pages*/
 //User Page
 export {default as Account} from "../Pages/Account/Account"
