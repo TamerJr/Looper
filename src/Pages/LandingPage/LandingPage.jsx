@@ -1,8 +1,11 @@
 import React from 'react'
+import ValueSection from '../../Components/valueSection/ValueSection'
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div>
+      <ValueSection/>
+    </div>
   )
 }
 

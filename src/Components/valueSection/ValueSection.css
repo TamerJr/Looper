@@ -1,0 +1,16 @@
+.ValueSection{
+    width: 100%;
+    background-color: #fff;
+}
+.ClientContainer{
+    width: 100%;
+}
+.Clients{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a4a4a4af;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
