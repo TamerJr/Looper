@@ -7,15 +7,15 @@ nav{
     position: sticky;
     width: 100%;
 }
-ul li *{
+nav ul li *{
     text-decoration: none;
     font-weight: 500;
     color: rgb(255, 255, 255);
 }
-ul li *:hover{
+nav ul li *:hover{
     font-weight: 600;
 }
-ul{
+nav ul{
     list-style: none;
     padding-left: 0;
     margin-left: 0;
@@ -23,7 +23,7 @@ ul{
     justify-content: center;
     align-items: center;
 }
-li{
+nav li{
     margin: 0 1rem;
 }
 img{
