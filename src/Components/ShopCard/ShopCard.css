@@ -9,7 +9,7 @@
 article{
     border-radius: 10px ;
     height:fit-content;
-    width: 400px;
+    max-width: 350px;
     overflow: hidden;
 }
 .Shop-Card{

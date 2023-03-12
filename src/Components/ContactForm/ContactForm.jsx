@@ -9,7 +9,7 @@ const ContactForm = () => {
     <footer>
       <section>
         <h3>Info :</h3>
-        <ul>
+        <ul className='footer-info'>
           <li><p>Working : </p><p> 7AM to 0AM </p></li>
           <li><p>Address : </p><p> City 13 Street</p></li>
           <li><p>Phone : </p><p> +2001234567890</p></li>

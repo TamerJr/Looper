@@ -1,12 +1,12 @@
 .ValueSection{
 
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     height: fit-content;
     color: white;
 }
 .ClientContainer{
-    width: 100%;
+    max-width: 100%;
 
 }
 .Clients{
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .Disc-info img {
     max-width: 100%;

@@ -23,9 +23,9 @@ const EleDetails  = () => {
           <h2>
            Current Amount 
           </h2>
-          <p>
+          <h4 >
             {ele?.Amount}
-          </p>
+          </h4>
         </div>
       </section>
       <figure className='EleFigure'>

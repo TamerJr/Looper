@@ -1,12 +1,22 @@
 footer{
     display: flex;
-    max-width :100%;
+    width :100%;
     color: aliceblue;
     justify-content: space-around;
     align-items: flex-start;
+   
+}
+footer  section ul  {
+    width: 100%;
 }
 footer *{
     transition: 200ms ease-in-out;
+}
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 footer input,textarea,select,option{
     padding: 5px 10px;
@@ -27,6 +37,9 @@ footer input,textarea,select,option{
 .Social-Media li:hover{
     scale: 1.2;
 }
+textarea{
+    height: 50px;
+}
 footer ul li{
     display: flex;
     justify-content: flex-start;
@@ -39,12 +52,31 @@ footer p,footer section p{
     gap: 1rem;
     align-items: flex-start;
 }
-textarea{
-    width: 300px;
-    height: 100px;
-}
+
 footer ul {
     list-style: none;
     padding: 0px;
+
+}
+@media only screen and (max-width :600px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+        align-items: center;
+    }
+    footer section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer section ul.footer-info li{
+       max-width: 100%;
+       min-width: 90%;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+    }
 
 }

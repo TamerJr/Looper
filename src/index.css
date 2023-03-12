@@ -8,8 +8,9 @@
   box-sizing: border-box;
 }
 body{
-  margin: 1rem .5rem;
+  margin: 1rem 2rem;
   max-width: 100%;
+  
   background: rgb(8, 8, 8);
 }
 .Notification{

@@ -1,5 +1,6 @@
 .EleDetails{
     display: flex;
+    /* flex-wrap: wrap; */
     color: aliceblue;
     width: 100%;
 }
@@ -15,12 +16,25 @@ h1{
     font-size: 24px;
 }
 figure.EleFigure{
-    width: 70%;
+    /* width: 100%; */
+    margin: 0px ;
     border-radius: 25px;
-    overflow: hidden;
 
 }
-
+.DiscriptionBox h4{
+    font-size: 18px;
+    background-color: rgb(46, 74, 25);
+    max-width: 30px;
+    text-align: center;
+    padding: 1rem .5rem;
+    border-radius: 5px;
+}
 .EleFigure img.ELeImg{
     max-width: 100% ;
+    border-radius: 25px;
+}
+@media only screen and (max-width:900px ){
+    .EleDetails{
+        flex-wrap: wrap;
+    }
 }

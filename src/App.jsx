@@ -19,9 +19,9 @@ function App() {
           <Route path="/account" element={<Account/>}/>
           <Route path="/eledetails/:id" element={<EleDetails/>}/>
       </Routes>
-     {user &&
+     
         <ContactForm/>
-      }
+      
       
     </div>
   )

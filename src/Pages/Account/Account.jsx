@@ -6,9 +6,12 @@ const Account = () => {
   const {list}=useContext(dbContext)
 
   return (
+    <>
     <section>
       <ShopCard Data={list}/>
     </section>
+
+    </>
   )
 }
 
