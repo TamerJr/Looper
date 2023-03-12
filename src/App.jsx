@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 import {Account, Conatct, ContactForm, EleDetails, LandingPage, LogIn, Navbar, ShopPage, SignUp, Terms} from "./Utiles/Utilities"
 import './App.css'
+import { useContext } from 'react'
+import userContext from './Utiles/Context/AuthContext'
 
 function App() {
-
+  const {user}=useContext(userContext)
   return (
     <div className="App">
       <Navbar/>
@@ -17,7 +19,10 @@ function App() {
           <Route path="/account" element={<Account/>}/>
           <Route path="/eledetails/:id" element={<EleDetails/>}/>
       </Routes>
-      <ContactForm/>
+     {user &&
+        <ContactForm/>
+      }
+      
     </div>
   )
 }

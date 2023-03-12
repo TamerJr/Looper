@@ -1,25 +1,13 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import ShopCard from '../../Components/ShopCard/ShopCard'
 
+import dbContext from '../../Utiles/Context/DBContect'
 const Account = () => {
+  const {list}=useContext(dbContext)
+
   return (
     <section>
-      <article>
-        <figure>
-          <figcaption>
-            Yoooooo
-          </figcaption>
-          <img/>
-        </figure>
-        <h2>
-
-        </h2>
-        <p>
-          Date :
-        </p>
-        <p>
-          Price :
-        </p>
-      </article>
+      <ShopCard Data={list}/>
     </section>
   )
 }

@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import "./ShopCard.css"
+import dbContext from '../../Utiles/Context/DBContect'
 const ShopCard = ({Data}) => {
+  const {addData}=useContext(dbContext)
   return (
-    <section className='Shop-Card'>
-      {Data.map((ele,ndx)=>
+    
+    <section className='Shop-Card' >
+      {Data?.map((ele,ndx)=>
         <article className='Elem' key={ndx}>
           <figure className='prodImg'>
-          {! ele.Amount &&<small>Follow</small>}
+          {! ele.Amount &&<small onClick={()=>addData(ele)}>Follow</small>} 
             <img src={ele.img} alt={ele.title} title={ele.title}/>
             <figcaption>
               {ele.title}
@@ -26,10 +29,9 @@ const ShopCard = ({Data}) => {
                     Details 
                 </Link>
               </button>
-              <button>
-                <Link to="/">
+              <button >
                     Buy 
-                </Link>
+
               </button>
             </section>
           </section>

@@ -1,8 +1,8 @@
-import { createContext ,useState } from "react";
-import {auth} from"../../firebase"
-import {signInWithEmailAndPassword ,createUserWithEmailAndPassword,signOut} from "firebase/auth"
+import { createContext ,useState ,useEffect } from "react";
+import {auth, db} from"../../firebase"
+import {signInWithEmailAndPassword ,createUserWithEmailAndPassword,signOut ,onAuthStateChanged} from "firebase/auth"
 import { useNavigate } from "react-router-dom";
-
+import {doc ,setDoc} from "firebase/firestore"
 const userContext=createContext();
 
 export const UserContextProvider=({children})=>{
@@ -16,28 +16,41 @@ export const UserContextProvider=({children})=>{
     const rmvElement=()=>{
         diver.remove();
     }
+    const [user,setUser]=useState(null)
     const navigate=useNavigate()
-    const [user,setUser]=useState(false)
     const [email, setEmail] = useState("")
     const [password,setPassword]=useState("")
-    const handleLogIn=async(e)=>{
+    const handleLogIn=(e)=>{
         e.preventDefault()
         try{
-           await signInWithEmailAndPassword(auth,email,password)
             appendMessageData();
             setTimeout(rmvElement ,1000)
             setTimeout(navigate, 2000,"/");
-            setUser(true)
+            setUser(email)
             setEmail("")
             setPassword("")
+
+           return signInWithEmailAndPassword(auth,email,password)
 
         }catch(err){
             alert(err.message)
         }
     }
-    const handleSignUp= async(e)=>{
+    //check if user Change or not to avoid resignin
+    useEffect(()=>{
+        const unsub=onAuthStateChanged(auth,(currentUser)=>{
+            setUser(currentUser)
+        })
+        return ()=>{
+            unsub();
+        }
+    })
+    const handleSignUp=async (e)=>{
         e.preventDefault()
         try{
+            setDoc(doc(db, "userList",email),{
+               usersList:[]
+           })
             await createUserWithEmailAndPassword(auth,email,password)
             appendMessageData();
             setTimeout(rmvElement ,1000)
@@ -49,13 +62,12 @@ export const UserContextProvider=({children})=>{
             alert(err.message)
         }
     }
-    const handleLogOut=async(e)=>{
+    const handleLogOut=(e)=>{
         try{
-            await signOut()
             appendMessageData();
             setTimeout(rmvElement ,1000)
             setTimeout(navigate, 2000,"/");
-            setUser(false)
+            return signOut(auth)
         }catch(err){
             alert(err.message)
         }

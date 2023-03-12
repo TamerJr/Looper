@@ -5,7 +5,6 @@ import ShopCard from '../../Components/ShopCard/ShopCard'
 import { Data } from '../../Utiles/Products'
 import { Clients } from '../../Utiles/Utilities'
 const LandingPage = () => {
- 
   return (
     <section>
       <ValueSection/>

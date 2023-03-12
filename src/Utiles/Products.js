@@ -39,7 +39,7 @@ export const Data=[
     img:"https://media.istockphoto.com/id/1402756439/photo/earth-globe-earth-map-world-map-inside-digital-environment.jpg?s=1024x1024&w=is&k=20&c=jNV9jxoSK-iTWe9q7yNPiFpV5spj2M7A9xDLAShuAcM=",
     title:"world map inside digital environment",
     discription:"So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.",
-    Amont:0       
+    Amount:0       
 },
     {
     img:"https://media.istockphoto.com/id/1443526132/photo/customer-service-assessment-concept-virtual-touch-screen-smiley-face-emoticon-service.jpg?s=612x612&w=0&k=20&c=wIrZJ_A7zh_c6kE_a2W4Sz6KZYbRkPtB3ztJSu3YM38=",
