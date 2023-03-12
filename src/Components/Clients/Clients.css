@@ -1,0 +1,9 @@
+.ClientsNum{
+    margin-top: 2rem;
+}
+.ClientsData {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
