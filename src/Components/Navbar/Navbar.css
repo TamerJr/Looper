@@ -1,21 +1,21 @@
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-radius: 50px;
 
     position: sticky;
     width: 100%;
 }
-nav ul li *{
+nav ul.navigation li *{
     text-decoration: none;
     font-weight: 500;
     color: rgb(255, 255, 255);
 }
-nav ul li *:hover{
+nav ul.navigation li *:hover{
     font-weight: 600;
 }
-nav ul{
+nav ul.navigation{
     list-style: none;
     padding-left: 0;
     margin-left: 0;
@@ -29,18 +29,76 @@ nav li{
 img{
     max-width: 125px;
 }
-ul li button{
+ul.navigation li button{
     border: 1px solid rgb(255, 255, 255);
     background: none;
     padding: 8px 15px;
     font-size: 15px;
     border-radius: 15px;
 }
-ul li button:hover{
+ul.navigation li button:hover{
     background: rgb(255, 255, 255);
     font-size: 15px;
     font-weight:400;
     cursor: pointer;
     color: rgb(0, 0, 0);
     transition: 500ms ease-in-out;
+}
+.toggled{
+    position: absolute;
+    top :50px; 
+    right: 1000px;
+    display: none;
+    
+
+}
+.toggleClick{
+    right :0px;
+    background-color: #221f1f;
+    max-width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
+.toggled li *{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.toggled ul {
+    list-style: none;
+    padding-left: 0;
+}
+.toggled li {
+    margin: 1rem 0;
+}
+.Hamburger{
+    display: none;
+}
+.logOutMenu {
+    border: 1px solid white;
+    background-color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ToggledMenu{
+    display: none;
+}
+
+@media only screen and (max-width : 1000px){
+    nav ul.navigation{
+        display: none;
+    }
+    .Hamburger{
+        display: block;
+        color: rgb(255, 255, 255);
+    }
+    .ToggledMenu{
+        display: block;
+    }
+    .toggled{
+        display: block;
+    }
 }

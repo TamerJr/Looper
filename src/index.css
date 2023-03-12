@@ -4,9 +4,11 @@
 }
 .root{
   width: 100%;
+  box-sizing: border-box;
 }
 body{
   margin: .5rem 2rem;
+  max-width: 100%;
   background: rgb(8, 8, 8);
 }
 .Notification{
